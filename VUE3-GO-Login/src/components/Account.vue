@@ -16,8 +16,6 @@
     height: 100vh;
     width: 100%;
     background-color: #2d2d4f;
-    background-size: cover;
-    background-position: center;
 }
 
 .account {
@@ -97,6 +95,7 @@ span {
     padding: 10px 36px;
     border-radius: 30px;
     margin-top: 16px;
+    cursor: pointer;
 }
 .subTitle,span {
     color: #7f7f97;
