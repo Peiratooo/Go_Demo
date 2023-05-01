@@ -35,12 +35,11 @@ const whiteList = ['/account', '/login', '/regist']
 router.beforeEach((to, from, next) => {
     // console.log(to.path);
     // console.log(localStorage.getItem('token'));
-    if (localStorage.getItem('token')) {
+    if (localStorage.getItem('Token')) {
+        console.log(localStorage.getItem('Token'));
         next()
-        console.log("no Token");
     } else {
         if (whiteList.includes(to.path)) {
-            console.log("no WhiteList");
             next()
         } else {
             next('/login')
